@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+const { Console } = require('@formidablejs/framework');
+
+/**
+ * --------------------------------------------------------------------------
+ * Run The Craftsman Application
+ * --------------------------------------------------------------------------
+ *
+ * When running the console application, Formidable will attempt to load the
+ * console.imba script from the bootstrap directory. This script will be ran
+ * using the "ImbaR" runtime. Both the runtime and console script can be
+ * changed by providing the paths to the runtime and console scripts in the
+ * "make" function.
+ */
+
+Console.make().run();

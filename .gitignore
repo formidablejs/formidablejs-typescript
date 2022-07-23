@@ -1,0 +1,17 @@
+/.formidable
+/.idea
+/.vscode
+/bootstrap/cache/config.json
+/node_modules
+/storage/sessions/*.json
+.env
+.env.backup
+.env.development
+.env.local
+.env.production
+.env.staging
+.env.testing
+.DS_Store
+npm-debug.log
+yarn-error.log
+*.tgz
