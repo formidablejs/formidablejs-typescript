@@ -9,10 +9,8 @@ import { ErrorIfAuthenticated } from './Middleware/ErrorIfAuthenticated';
 import { TrimStrings } from './Middleware/TrimStrings';
 import { VerifyCsrfToken } from './Middleware/VerifyCsrfToken';
 
-export class Kernel extends HttpKernel
-{
-	get middleware(): Array<Object>
-	{
+export class Kernel extends HttpKernel {
+	get middleware(): Array<Object> {
 		return [
 			HasEncryptionKey,
 			TrimStrings,
@@ -20,8 +18,7 @@ export class Kernel extends HttpKernel
 		];
 	}
 
-	get middlewareGroups(): Object
-	{
+	get middlewareGroups(): Object {
 		return {
 			jwt: [
 
@@ -34,8 +31,7 @@ export class Kernel extends HttpKernel
 		};
 	}
 
-	get routeMiddleware(): Object
-	{
+	get routeMiddleware(): Object {
 		return {
 			'auth': Authenticate,
 			'guest': ErrorIfAuthenticated,
