@@ -1,9 +1,8 @@
-const { current } = require '../storage/framework/address.json';
-const { SuperTest } = require 'supertest';
-const request = require 'supertest';
+const { current } = require('../storage/framework/address.json');
+const request = require('supertest');
 
 describe('Application (e2e)', () => {
-	let app: SuperTest;
+	let app;
 
 	beforeAll(() => app = request(current));
 
