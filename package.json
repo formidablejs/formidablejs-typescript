@@ -17,8 +17,9 @@
 		"@formidablejs/framework": "^0.12.1",
 		"@formidablejs/mailer": "^0.3.1",
 		"@formidablejs/stubs": "^0.2.9",
-		"imba": "^2.0.0-alpha.212",
+		"@formidablejs/ts-ports": "^0.0.1",
 		"imba-shell": "^0.4.0",
+		"imba": "^2.0.0-alpha.212",
 		"supertest": "^6.2.4"
 	},
 	"devDependencies": {
