@@ -27,5 +27,14 @@
 		"@types/node": "^18.7.23",
 		"jest": "^29.1.2"
 	},
+	"development": {
+		"ignore": [
+			"bootstrap/config",
+			"database",
+			"node_modules",
+			"public",
+			"storage"
+		]
+	},
 	"language": "TypeScript"
 }
