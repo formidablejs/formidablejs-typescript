@@ -1,9 +1,9 @@
-import { VerifyCsrfToken as Middleware } from '@formidablejs/framework';
+import { VerifyCsrfToken as Middleware } from '@formidablejs/framework'
 
 export class VerifyCsrfToken extends Middleware {
-	get except(): String[] {
+	get except(): Array<string> {
 		return [
 
-		];
+		]
 	}
 }

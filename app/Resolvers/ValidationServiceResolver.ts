@@ -1,7 +1,7 @@
-import { ValidationServiceResolver as ServiceResolver } from '@formidablejs/framework';
+import { ValidationServiceResolver as ServiceResolver } from '@formidablejs/framework'
 
 export class ValidationServiceResolver extends ServiceResolver {
-	registeredRules(): Object {
+	registeredRules(): object {
 		return {
 			//
 		}

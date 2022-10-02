@@ -1,9 +1,9 @@
-import { ConsoleKernel } from '@formidablejs/framework';
+import { ConsoleKernel } from '@formidablejs/framework'
 
 export class Kernel extends ConsoleKernel {
-	get registered(): Object[] {
+	get registered(): Array<object> {
 		return [
 			//
-		];
+		]
 	}
 }
