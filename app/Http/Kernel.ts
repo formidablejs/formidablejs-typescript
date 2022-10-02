@@ -31,7 +31,7 @@ export class Kernel extends HttpKernel {
 		}
 	}
 
-	get routeMiddleware(): Object {
+	get routeMiddleware(): object {
 		return {
 			'auth': Authenticate,
 			'guest': ErrorIfAuthenticated,
