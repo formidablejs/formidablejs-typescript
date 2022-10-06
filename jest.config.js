@@ -5,12 +5,15 @@ module.exports = {
     moduleFileExtensions: [
         'imba',
         'js',
+        'ts',
         'json',
     ],
     testMatch: [
-        '<rootDir>/test/**/*.imba'
+        '<rootDir>/test/**/*.imba',
+        '<rootDir>/test/**/*.ts',
     ],
     transform: {
         '\\.(imba)$': '<rootDir>/node_modules/@formidablejs/framework/bin/jest/preprocessor.js',
+        '\\.(ts)$': 'ts-jest',
     },
 };
