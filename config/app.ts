@@ -15,9 +15,9 @@ import { SessionFileStoreServiceResolver } from '@formidablejs/framework'
 import { SessionMemoryStoreServiceResolver } from '@formidablejs/framework'
 import { SessionServiceResolver } from '@formidablejs/framework'
 import { StaticContentServiceResolver } from '@formidablejs/framework'
+import { TypeScriptPortsServiceResolver } from '@formidablejs/ts-ports'
 import { AppServiceResolver } from '../app/Resolvers/AppServiceResolver'
 import { RouterServiceResolver } from '../app/Resolvers/RouterServiceResolver'
-import { TypeScriptPortsServiceResolver } from '@formidablejs/ts-ports'
 import { ValidationServiceResolver } from '../app/Resolvers/ValidationServiceResolver'
 
 export default {
