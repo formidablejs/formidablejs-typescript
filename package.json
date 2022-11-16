@@ -30,7 +30,7 @@
 		"typescript": "^4.9.3"
 	},
 	"development": {
-		"mode": "nodemon"
+		"mode": "imba"
 	},
 	"language": "TypeScript"
 }
