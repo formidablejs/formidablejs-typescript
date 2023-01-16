@@ -5,6 +5,7 @@ import { Kernel as HttpKernel } from '@formidablejs/framework'
 import { ValidateSignature } from '@formidablejs/framework'
 import { AcceptLanguage } from './Middleware/AcceptLanguage'
 import { ConvertEmptyStringsToNull } from './Middleware/ConvertEmptyStringsToNull'
+import { EnsureEmailIsVerified } from './Middleware/EnsureEmailIsVerified'
 import { ErrorIfAuthenticated } from './Middleware/ErrorIfAuthenticated'
 import { TrimStrings } from './Middleware/TrimStrings'
 import { VerifyCsrfToken } from './Middleware/VerifyCsrfToken'
@@ -36,7 +37,8 @@ export class Kernel extends HttpKernel {
 			'auth': Authenticate,
 			'guest': ErrorIfAuthenticated,
 			'lang': AcceptLanguage,
-			'signed': ValidateSignature
+			'signed': ValidateSignature,
+			'verified': EnsureEmailIsVerified
 		}
 	}
 }
