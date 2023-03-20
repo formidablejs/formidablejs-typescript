@@ -8,6 +8,10 @@ export class AppServiceResolver extends ServiceResolver {
 		// Auth.verificationMailer(VerifyEmail)
 		// Auth.resetPasswordMailer(ResetPassword)
 
+		// Auth.verificationMailerEvents({
+		// 	onError: (reason) => console.error(reason)
+		// })
+
 		return this
 	}
 }
