@@ -37,6 +37,7 @@ export class Kernel extends HttpKernel {
 	get middlewareAliases(): MiddlewareAliases {
 		return {
 			'auth': Authenticate,
+			'csrf': VerifyCsrfToken,
 			'guest': ErrorIfAuthenticated,
 			'lang': AcceptLanguage,
 			'signed': ValidateSignature,
