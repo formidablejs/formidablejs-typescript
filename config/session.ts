@@ -13,7 +13,7 @@ export default {
 	 *
 	 * Supported: "memory", "file", "redis"
 	 *
-	 * See: "config > app.imba > resolvers"
+	 * See: "config > app.ts > resolvers"
 	 */
 
 	driver: 'file',
