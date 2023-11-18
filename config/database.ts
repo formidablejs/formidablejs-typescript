@@ -120,6 +120,14 @@ export default {
 			password: helpers.env('REDIS_PASSWORD', null),
 			port: helpers.env('REDIS_PORT', '6379'),
 			database: helpers.env('REDIS_CACHE_DB', '1')
+		},
+
+		queue: {
+			url: helpers.env('REDIS_URL'),
+			host: helpers.env('REDIS_HOST', '127.0.0.1'),
+			password: helpers.env('REDIS_PASSWORD', null),
+			port: helpers.env('REDIS_PORT', '6379'),
+			database: helpers.env('REDIS_CACHE_DB', '2')
 		}
 	}
 
