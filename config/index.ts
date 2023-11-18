@@ -8,6 +8,7 @@ import database from './database'
 import hashing from './hashing'
 import logging from './logging'
 import mail from './mail'
+import queue from './queue'
 import session from './session'
 
 export class Config extends ConfigRepository
@@ -27,6 +28,7 @@ export class Config extends ConfigRepository
 			hashing,
 			logging,
 			mail,
+			queue,
 			session
 		}
 	}
