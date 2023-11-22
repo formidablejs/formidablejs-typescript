@@ -16,7 +16,7 @@ export default {
 	 * See: "config > app.ts > resolvers"
 	 */
 
-	driver: 'file',
+	driver: helpers.env('SESSION_DRIVER', 'file'),
 
 	/**
 	 * --------------------------------------------------------------------------
