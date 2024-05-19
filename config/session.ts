@@ -13,7 +13,7 @@ export default {
 	 *
 	 * Supported: "memory", "file", "redis"
 	 *
-	 * See: "config > app.ts > resolvers"
+	 * See: "bootstrap > resolvers.ts"
 	 */
 
 	driver: helpers.env('SESSION_DRIVER', 'file'),
