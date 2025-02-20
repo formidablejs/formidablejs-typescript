@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	/**
@@ -16,7 +14,7 @@ export default {
 	 * See: "bootstrap > resolvers.ts"
 	 */
 
-	driver: helpers.env('SESSION_DRIVER', 'file'),
+	driver: env('SESSION_DRIVER', 'file'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -27,7 +25,7 @@ export default {
 	 * (and read from in the request).
 	 */
 
-	cookie: helpers.env('SESSION_COOKIE', helpers.slug( helpers.env('APP_NAME', 'formidable'), '_' ) + '_session'),
+	cookie: env('SESSION_COOKIE', slug( env('APP_NAME', 'formidable'), '_' ) + '_session'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -50,7 +48,7 @@ export default {
 	 * to be allowed to remain idle before it expires.
 	 */
 
-	lifetime: helpers.env('SESSION_LIFETIME', helpers.ms('2 hours')),
+	lifetime: env('SESSION_LIFETIME', ms('2 hours')),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -73,7 +71,7 @@ export default {
 	 * only the current domain.
 	 */
 
-	domain: helpers.env('SESSION_DOMAIN', null),
+	domain: env('SESSION_DOMAIN', null),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -83,7 +81,7 @@ export default {
 	 * Ensures the browser only sends the cookie over HTTPS.
 	 */
 
-	secure: helpers.env('SESSION_SECURE_COOKIE', false),
+	secure: env('SESSION_SECURE_COOKIE', false),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -94,7 +92,7 @@ export default {
 	 * helping to protect against cross-site scripting.
 	 */
 
-	http_only: helpers.env('SESSION_HTTP_ONLY', false),
+	http_only: env('SESSION_HTTP_ONLY', false),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -108,6 +106,6 @@ export default {
 	 * Supported: "lax", "strict", "none"
 	 */
 
-	same_site: helpers.env('SESSION_SAME_SITE', 'none')
+	same_site: env('SESSION_SAME_SITE', 'none')
 
 }

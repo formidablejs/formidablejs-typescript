@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	/**
@@ -13,7 +11,7 @@ export default {
 	 * which should receive your application's uncaught exceptions.
 	 */
 
-	api_key: helpers.env('BUGSNAG_API_KEY', ''),
+	api_key: env('BUGSNAG_API_KEY', ''),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -23,7 +21,7 @@ export default {
 	 * Set the type of application executing the current code.
 	 */
 
-	app_type: helpers.env('BUGSNAG_APP_TYPE'),
+	app_type: env('BUGSNAG_APP_TYPE'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -33,7 +31,7 @@ export default {
 	 * Set the version of application executing the current code.
 	 */
 
-	app_version: helpers.env('BUGSNAG_APP_VERSION'),
+	app_version: env('BUGSNAG_APP_VERSION'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -45,7 +43,7 @@ export default {
 	 * this should be the URL to your Bugsnag instance.
 	 */
 
-	endpoint: helpers.env('BUGSNAG_ENDPOINT'),
+	endpoint: env('BUGSNAG_ENDPOINT'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -56,7 +54,7 @@ export default {
 	 * identify it by if needed.
 	 */
 
-	hostname: helpers.env('BUGSNAG_HOSTNAME'),
+	hostname: env('BUGSNAG_HOSTNAME'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -69,7 +67,7 @@ export default {
 	 * If this is not set, we will automatically try to detect it.
 	 */
 
-	project_root: helpers.env('BUGSNAG_PROJECT_ROOT'),
+	project_root: env('BUGSNAG_PROJECT_ROOT'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -80,7 +78,7 @@ export default {
 	 * under the "QUERY" tab.
 	 */
 
-	query: helpers.env('BUGSNAG_QUERY', true),
+	query: env('BUGSNAG_QUERY', true),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -91,7 +89,7 @@ export default {
 	 * tab.
 	 */
 
-	bindings: helpers.env('BUGSNAG_QUERY_BINDINGS', false),
+	bindings: env('BUGSNAG_QUERY_BINDINGS', false),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -103,7 +101,7 @@ export default {
 	 * want to send this snippet, then set this to false.
 	 */
 
-	send_code: helpers.env('BUGSNAG_SEND_CODE', true),
+	send_code: env('BUGSNAG_SEND_CODE', true),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -119,7 +117,7 @@ export default {
 	 * service resolver.
 	 */
 
-	callbacks: helpers.env('BUGSNAG_CALLBACKS', true),
+	callbacks: env('BUGSNAG_CALLBACKS', true),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -131,7 +129,7 @@ export default {
 	 * Leaving this unset will default to using the application environment.
 	 */
 
-	release_stage: helpers.env('BUGSNAG_RELEASE_STAGE'),
+	release_stage: env('BUGSNAG_RELEASE_STAGE'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -141,7 +139,7 @@ export default {
 	 * Set which release stages should send notifications to Bugsnag.
 	 */
 
-	notify_release_stages: helpers.isEmpty(helpers.env('BUGSNAG_NOTIFY_RELEASE_STAGES')) ? null : helpers.env('BUGSNAG_NOTIFY_RELEASE_STAGES').replace(/\s/g, '').split(','),
+	notify_release_stages: isEmpty(env('BUGSNAG_NOTIFY_RELEASE_STAGES')) ? null : env('BUGSNAG_NOTIFY_RELEASE_STAGES').replace(/\s/g, '').split(','),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -152,7 +150,7 @@ export default {
 	 * Formidable's authentication system.
 	 */
 
-	user: helpers.env('BUGSNAG_USER', true),
+	user: env('BUGSNAG_USER', true),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -162,6 +160,6 @@ export default {
 	 * An array of metadata keys that should be redacted.
 	 */
 
-	redacted_keys: helpers.isEmpty(helpers.env('BUGSNAG_REDACTED_KEYS')) ? null : helpers.env('BUGSNAG_REDACTED_KEYS').split(',')
+	redacted_keys: isEmpty(env('BUGSNAG_REDACTED_KEYS')) ? null : env('BUGSNAG_REDACTED_KEYS').split(',')
 
 }

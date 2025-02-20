@@ -1,5 +1,3 @@
-import { helpers } from '@formidablejs/framework'
-
 export default {
 
 	/**
@@ -12,7 +10,7 @@ export default {
 	 * any other location as required by the application or its packages.
 	 */
 
-	name: helpers.env('APP_NAME', 'Formidable'),
+	name: env('APP_NAME', 'Formidable'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -24,7 +22,7 @@ export default {
 	 * services the application utilizes. Set this in your ".env" file.
 	 */
 
-	env: helpers.env('APP_ENV', 'production'),
+	env: env('APP_ENV', 'production'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -36,7 +34,7 @@ export default {
 	 * application. If disabled, a simple generic error page is shown.
 	 */
 
-	debug: helpers.toBoolean(helpers.env('APP_DEBUG', false)),
+	debug: toBoolean(env('APP_DEBUG', false)),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -48,9 +46,9 @@ export default {
 	 * application.
 	 */
 
-	url: helpers.env('APP_URL', 'http://localhost:3000'),
+	url: env('APP_URL', 'http://localhost:3000'),
 
-	client_url: helpers.env('CLIENT_URL', 'http://localhost:8000'),
+	client_url: env('CLIENT_URL', 'http://localhost:8000'),
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -85,7 +83,7 @@ export default {
 	 * Formidable uses this key to encrypt or decrypt cookies and the cache.
 	 */
 
-	key: helpers.env('APP_KEY'),
+	key: env('APP_KEY'),
 
 	cipher: 'AES-256-CBC',
 
