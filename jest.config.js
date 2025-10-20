@@ -1,4 +1,6 @@
 module.exports = {
+    preset: 'ts-jest',
+    testEnvironment: 'node',
     moduleNameMapper: {
         imba: '<rootDir>/node_modules/imba/dist/imba.node.js',
     },
@@ -16,4 +18,7 @@ module.exports = {
         '\\.(imba)$': '<rootDir>/node_modules/@formidablejs/framework/bin/jest/preprocessor.js',
         '\\.(ts)$': 'ts-jest',
     },
+    transformIgnorePatterns: [
+        'node_modules/(?!(.*\\.mjs$|@paralleldrive/cuid2|@formidablejs|supertest|superagent|formidable|@paralleldrive))'
+    ]
 };
