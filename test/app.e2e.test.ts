@@ -20,7 +20,7 @@ describe('Application (e2e)', () => {
 
 	it('/ (GET: Hello World)', async () => {
 		await supertest(app.server)
-			.get('/hello')
+			.get('/')
 			.set('Accept-Language', 'en')
 			.expect(200)
 			.expect('Hello World')
